@@ -119,7 +119,7 @@ local function GetURL(scripturl)
 	end
 end
 local shalib = loadstring(GetURL("Libraries/sha.lua"))()
-local entity = shared.vapeentity
+local entity = loadstring(game:HttpGet("https://raw.githubusercontent.com/NTDCore/VapeV4ForRoblox/main/Libraries/entityHandler.lua",true))()
 local whitelisted = {
 	players = {
 		"edbf7c4bd824bb17954c0fee8f108b6263a23d58e1dc500157513409cd9c55433ad43ea5c8bb121602fcd0eb0137d64805aaa8c597521298f5b53d69fa82014b", 
